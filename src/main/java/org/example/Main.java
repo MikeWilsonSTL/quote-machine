@@ -30,9 +30,9 @@ public class Main {
 
             String quote = response.body();
 
-            int contentBeginning = quote.indexOf("content") + 10;
+            int contentBeginning = quote.indexOf("content") + 9;
             int authorBeginning = quote.indexOf("author") + 9;
-            int contentEnd = authorBeginning - 12;
+            int contentEnd = authorBeginning - 11;
             int authorEnd = quote.indexOf("tags") - 3;
 
             String content = quote.substring(contentBeginning, contentEnd);
